@@ -11,7 +11,7 @@
 #    docker build -f docker/Dockerfile --build-arg PYTHON_VERSION=3.6 .
 #
 
-ARG PYTHON_VERSION=2
+ARG PYTHON_VERSION=3
 
 ###
 ### Stage 0: builder
@@ -47,7 +47,6 @@ RUN pip install --prefix="/install" --no-warn-script-location \
 COPY synapse /synapse/synapse/
 COPY scripts /synapse/scripts/
 COPY MANIFEST.in README.rst setup.py synctl /synapse/
-
 RUN pip install --prefix="/install" --no-warn-script-location \
         /synapse[all]
 

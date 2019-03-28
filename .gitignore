@@ -10,13 +10,19 @@
 *.tac
 _trial_temp/
 _trial_temp*/
-
+homeserver*
+my.matrix.host.log.config
+pipfile
+ 
 # stuff that is likely to exist when you run a server locally
 /*.signing.key
 /*.tls.crt
 /*.tls.key
 /uploads
 /media_store/
+/schemas/
+/files/
+/config/
 
 # IDEs
 /.idea/
@@ -33,4 +39,4 @@ _trial_temp*/
 /docs/build/
 /htmlcov
 /pip-wheel-metadata/
-
+/env/
